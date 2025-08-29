@@ -8,6 +8,7 @@
 
 body{
     font-family: "Poppins", sans-serif;
+    
   /* font-weight: 100;
   font-style: normal; */
 }
@@ -29,10 +30,20 @@ a{
     text-decoration: none;
     color: black;
     font-size: 1.2rem;
+    transition: all 10s ease;
     /* color: black; */
 }
 li{
     list-style: none;
+}
+
+.container{
+    /* max-width: 1200px; */
+    /* width: 70%; */
+    height: 100vh;
+    padding:0px 200px ;
+    background-color: white;
+    /* margin: auto; */
 }
 #nav-container{
     /* position: fixed; */
@@ -45,4 +56,88 @@ li{
     color: black;
     box-shadow: 20px 10px 5px rgba(0,0,0,0.1);
 
+}
+
+a:hover{ 
+    color: lightgray;
+    border-bottom: 2px solid lightgray;
+    padding-bottom: 15px;
+}
+.profile-img img{
+    width: 500px;
+    height: 505px;
+    border-radius: 50%;
+}
+.hero-section{
+    justify-content: space-around;
+    text-align: center;
+    padding: 0px 220;
+}
+#profile-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+#profile-info p{
+    font-size: 1.2rem;
+    color: darkgray;
+    font-weight : 700;
+}
+#profile-info h1{
+    font-size: 2rem;
+    
+}
+#profile-info h2{
+    font-size: 1.5rem;
+    color: darkgrey;
+}
+#profile-btn a:nth-child(1){
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 50px;
+    font-size: 0.80rem;
+}
+#profile-btn a:nth-child(2){
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 50px;
+    background-color: black;
+    color: white;
+    font-size: 0.80rem;
+}
+
+#profile-btn a:nth-child(1):hover{
+    background-color: black;
+    color: white;
+}
+
+.about-container > p {
+    color: darkgray;
+    margin-bottom: 10px;
+
+}
+.about-container > h2 {
+    font-size: 3rem;
+    color: darkgray;
+    margin-bottom: 10px;
+    
+}
+
+.about-container > p,h2{
+    text-align: center;
+}
+
+.about-me {
+    margin-top: 5rem;
+}
+
+.about-me > div img {
+    border-radius: 30px;
+}
+.about-info-div {
+    padding: 20px 50px;
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 20px;
 }
